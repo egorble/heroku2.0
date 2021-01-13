@@ -82,6 +82,6 @@ class DishDeleteView(LoginRequiredMixin, GroupRequiredMixin, DeleteView):
     success_url = reverse_lazy('menu:dishes')
 
     def get(self, request, *args, **kwargs):
-        messages.success(request, 'Страва успішно видалена!')
+        messages.success(request, 'Страва успішно видалена!!')
         return self.post(request, *args, **kwargs)
 
